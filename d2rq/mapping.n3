@@ -1,0 +1,104 @@
+@prefix map: <file:/home/augustus/d2r-server-0.7/mapping.n3#> .
+@prefix db: <> .
+@prefix vocab: <my:opencollege:studentvocab/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+
+map:database a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://localhost/OpenCollege";
+	d2rq:username "root";
+	d2rq:password "verukal";
+	jdbc:autoReconnect "true";
+	jdbc:zeroDateTimeBehavior "convertToNull";
+	.
+
+# Table Students
+map:Students a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "Students/@@Students.SI@@";
+	d2rq:class vocab:Students;
+	d2rq:classDefinitionLabel "Students";
+	.
+map:Students__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property rdfs:label;
+	d2rq:pattern "Students #@@Students.SI@@";
+	.
+map:Students_SI a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property vocab:Students_SI;
+	d2rq:propertyDefinitionLabel "Students SI";
+	d2rq:column "Students.SI";
+	d2rq:datatype xsd:int;
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_First+Name> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_First+Name>;
+	d2rq:propertyDefinitionLabel "Students First Name";
+	d2rq:column "Students.First Name";
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_Middle+Name> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_Middle+Name>;
+	d2rq:propertyDefinitionLabel "Students Middle Name";
+	d2rq:column "Students.Middle Name";
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_Last+Name> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_Last+Name>;
+	d2rq:propertyDefinitionLabel "Students Last Name";
+	d2rq:column "Students.Last Name";
+	.
+map:Students_Sex a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property vocab:Students_Sex;
+	d2rq:propertyDefinitionLabel "Students Sex";
+	d2rq:column "Students.Sex";
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_Date+Of+Birth> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_Date+Of+Birth>;
+	d2rq:propertyDefinitionLabel "Students Date Of Birth";
+	d2rq:column "Students.Date Of Birth";
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_Email+ID> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_Email+ID>;
+	d2rq:propertyDefinitionLabel "Students Email ID";
+	d2rq:column "Students.Email ID";
+	.
+map:Students_Class a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property vocab:Students_Class;
+	d2rq:propertyDefinitionLabel "Students Class";
+	d2rq:column "Students.Class";
+	.
+map:Students_Branch a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property vocab:Students_Branch;
+	d2rq:propertyDefinitionLabel "Students Branch";
+	d2rq:column "Students.Branch";
+	.
+map:Students_Area a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property vocab:Students_Area;
+	d2rq:propertyDefinitionLabel "Students Area";
+	d2rq:column "Students.Area";
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_City%2FTown> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_City%2FTown>;
+	d2rq:propertyDefinitionLabel "Students City/Town";
+	d2rq:column "Students.City/Town";
+	.
+<file:/home/augustus/d2r-server-0.7/mapping.n3#Students_PIN+Code> a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Students;
+	d2rq:property <my:opencollege:studentvocab/resource/Students_PIN+Code>;
+	d2rq:propertyDefinitionLabel "Students PIN Code";
+	d2rq:column "Students.PIN Code";
+	.
+

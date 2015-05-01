@@ -1,0 +1,12 @@
+{
+  "head": {
+    "vars": [ "x1" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "x1": { "type": "literal" , "value": "Mathew" }
+      }
+    ]
+  }
+}

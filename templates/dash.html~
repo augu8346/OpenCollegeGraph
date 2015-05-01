@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>Dashboard</title>
+			
+							<link rel="shortcut icon" href="favicon_16.ico">
+								<link rel="bookmark" href="favicon_16.ico">
+									<link rel="stylesheet" href="css/site.min.css">
+										<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+											<!--[if lt IE 9]>
+											<script src="js/html5shiv.js"></script>
+											<script src="js/respond.min.js"></script>
+											<![endif]-->
+											<script type="text/javascript" src="js/site.min.js"></script>
+										</head>
+										
+										
+										<body style="background-color: #f2f2f6">
+											<div class="docs-header">
+												<nav class="navbar navbar-default navbar-custom" role="navigation">
+													<div class="container">
+														<div class="navbar-header">
+															<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+																<span class="sr-only">Toggle navigation</span>
+																<span class="icon-bar"></span>
+																<span class="icon-bar"></span>	
+																<span class="icon-bar"></span>
+															</button>
+															<a class="navbar-brand" href="index.html">
+																<img src="img/logo2.png" height="40">
+																</a>
+															</div>
+															<div class="collapse navbar-collapse">
+																<ul class="nav navbar-nav navbar-right">
+																	<li>
+																		<a class="nav-link current" href="sLogin.html">Student</a>
+																	</li>
+																	<li>
+																		<a class="nav-link" href="tLogin.html">Staff</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</nav>
+													<div class="topic">
+														<div class="container">
+															<div class="col-md-8">
+																<h3>Open College Graph</h3>
+																<h4>The Semantic Student Database</h4>
+															</div>
+				<div class="col-md-6"><div class="form-search search-only"><i class="search-icon glyphicon glyphicon-search"></i> <input class="form-control search-query"></div></div>
+														</div>
+													
+													</div>
+												</div>
+			
+			<div class="col-md-19">
+    <div class="panel">
+        <ul id="myTab1" class="nav nav-tabs nav-justified">
+            <li class="active">
+                <a href="#home1" data-toggle="tab"> .</a>
+
+            </li>
+           </ul>
+												<h3><center>Student Profile</h3>   
+   <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home1">
+
+			
+ <form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">Name</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div>   
+	
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">Sex</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">Area</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">Class</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">City</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">Email ID:</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">DOB</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	<div class="form-group">
+        <label class="col-xs-2 control-label" for="inputWarning">PIN Code:</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Student Name" required autofocus>
+        </div>
+    </div> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    </div>
+</form>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+			
